@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Commander Life</title>
+    <script type="module" crossorigin src="./assets/index-Bo84-80n.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CblWu7I_.css">
+  </head>
+  <body>
+    <header>
+      <h1>Commander Life</h1>
+      <p id="status">Starting…</p>
+    </header>
+
+    <section class="glasses">
+      <div class="glasses-head">
+        <span>Glasses preview · <b id="preview-screen">Life</b></span>
+      </div>
+      <pre id="preview" aria-live="polite"></pre>
+      <div class="gestures" aria-label="Simulate glasses gestures">
+        <button data-gesture="up" title="Swipe forward (+1)">Swipe +</button>
+        <button data-gesture="down" title="Swipe back (−1)">Swipe −</button>
+        <button data-gesture="tap">Tap</button>
+        <button data-gesture="double">2× Tap</button>
+        <button data-gesture="hold">Hold</button>
+      </div>
+    </section>
+
+    <nav>
+      <button data-tab="life">Life</button>
+      <button data-tab="mana">Mana</button>
+      <button data-tab="setup">Setup</button>
+    </nav>
+
+    <main id="view"></main>
+
+  </body>
+</html>
