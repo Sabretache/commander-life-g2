@@ -1,0 +1,21 @@
+{
+  "name": "mtg-g2",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "pack": "npm run build && evenhub pack app.json ./dist -o mtg-g2.ehpk",
+    "qr": "evenhub qr --port 5173"
+  },
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.16"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6",
+    "vitest": "^3.2.7"
+  }
+}
